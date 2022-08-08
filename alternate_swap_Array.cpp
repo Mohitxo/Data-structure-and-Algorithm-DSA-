@@ -2,13 +2,17 @@
 using namespace std;
 
 void swapalternate(int arr[],int size){
-        for(int i=0; i<size; i=i+2){
-            if(i+1<size)
-               swap(arr[i],arr[i+1]);
+        for(int i=0; i<size; i=i+2){  //i should be increased by 2 bcoz nahi to same elemenet 2 bar swap hoga
+            if(i+1<size)    //base condition
+               swap(arr[i],arr[i+1]);   //swapping done here
+            //    if swap function does not work in online coding test than use this method
+            //temp = arr[i];
+            // arr[i]=arr[i+1];
+            //arr[i+1]=temp;
         }
 
 }
-
+//print the array
 int printArray(int arr[], int size)
 {
 
